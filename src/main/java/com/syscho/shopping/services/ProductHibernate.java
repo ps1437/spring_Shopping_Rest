@@ -1,4 +1,4 @@
-package com.syscho.shopping.services;
+/*package com.syscho.shopping.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -35,3 +35,4 @@ public class ProductHibernate {
 		return productDaoHibernate.save(prodForm);
 	}
 }
+*/

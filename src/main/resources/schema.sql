@@ -1,3 +1,5 @@
+drop  table Product;
+
 create table Product
 (
    PROD_ID integer not null,

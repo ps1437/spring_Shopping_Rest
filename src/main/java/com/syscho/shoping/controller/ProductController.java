@@ -1,7 +1,6 @@
 package com.syscho.shoping.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.syscho.shoping.form.ProductForm;
-import com.syscho.shopping.services.ProductHibernate;
+import com.syscho.shopping.services.ProductService;
 
 @RestController
 @RequestMapping("/product")
 public class ProductController {
 
-	/*@Autowired
+	@Autowired
 	private ProductService productService;
 
 	@PostMapping(path = "/addProduct")
@@ -49,11 +48,11 @@ public class ProductController {
 	@PutMapping(path = "/updateProduct")
 	public int updateProduct(@RequestBody ProductForm form) {
 		return productService.update(form);
-	}*/
+	}
 
 	
 	
-	@Autowired
+	/*@Autowired
 	private ProductHibernate productService;
 
 
@@ -83,7 +82,7 @@ public class ProductController {
 	@PutMapping(path = "/updateProduct")
 	public ProductForm updateProduct(@RequestBody ProductForm form) {
 		return productService.update(form);
-	}
+	}*/
 	
 	
 }

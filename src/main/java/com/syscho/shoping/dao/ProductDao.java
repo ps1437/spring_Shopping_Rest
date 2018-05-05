@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.syscho.shoping.form.ProductForm;
@@ -16,9 +17,6 @@ import com.syscho.shoping.form.ProductForm;
 public class ProductDao {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
-	
-	
-
 	
 	class ProductRowMapper implements RowMapper<ProductForm> {
 		@Override
